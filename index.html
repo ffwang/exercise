@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>活动练习页面</title>
+	<style type="text/css">
+		html,body{
+			margin:0px auto;
+			padding: 0px;
+			width: 1000px;
+		}
+		#top{
+			height: 125px;
+			background-image: url(images/top.jpg);
+		}
+		.logo{
+			width: 240px;
+			height: 125px;
+			margin-top: 30px;
+			margin-left: 60px;
+			float: left;
+			background: url(images/logo.jpg) no-repeat;
+		}
+		.top_right1{
+			width: 381px;
+			height: 18px;
+			float: right;
+			margin-top: 31px;
+		}
+		.home{
+			width: 35px;
+			height: 18px;
+			border-right: 1px dotted #37393c;
+			float: right;
+		}
+		.home_logo{
+			display: block;
+			width: 18px;
+			height: 15px;
+			background: url(images/compose.png) no-repeat;
+			background-position: 0 -530px;width: 18px; height: 15px;
+		}
+		.email{
+			width: 55px;
+			height: 50px;
+			float: right;
+		}
+		.email_logo{
+			display: block;
+			width: 16px;
+			height: 14px;
+			margin-left: 21px;
+			background: url(images/compose.png) no-repeat;
+			background-position: 0 -464px;width: 16px; height: 14px;
+		}
+		.computer{
+			width: 95px;
+			height: 18px;
+			border-left: 1px dotted #37393c;
+			float: right;
+		}
+		.computer_logo{
+			display: block;
+			width: 16px;
+			height: 15px;
+			margin-left: 20px;
+			background: url(images/compose.png) no-repeat;
+			background-position: 0 -399px; width: 16px; height: 15px;
+		}
+		.top_right2{
+			width: 595px;
+			height: 75px;
+			float: right;
+			margin-top: 20px;
+		}
+		.home1,.aircraft,.safety,.charters,.contacts{
+			display: block;
+			float: left;
+			padding: 10px 15px;
+			font-family: MyriadPro Regular;
+			color: white;
+			text-decoration:none;
+		}
+		.top_right2 a:hover{
+			background-color: black;
+			border-radius: 3px;
+		}
+		#head{
+			position: relative;
+			height: 321px;
+			background-image: url(images/head.jpg);
+		}
+		.head_content{
+			position: relative;
+			width: 335px;
+			height: 72px;
+			top: 130px;
+			left: 60px;
+			font-style: italic;
+			color: white;
+		}
+		.head_content p{
+			margin: 0 0;
+		}
+		.head_button{
+			width: 335px;
+			height: 50px;
+			float: left;
+		}
+		.head_button_logo{
+			display: block;
+			width: 236px;
+			height: 31px;
+			margin-left: 55px;
+			margin-top: 180px;
+			background: url(images/compose.png) no-repeat;
+			background-position: 0 0; width: 236px; height: 31px;
+		}
+		#content{
+			height: 729px;
+		}
+		.content_left{
+			float: left;
+			width: 347px;
+			height: 729px;
+			background-color: #f4f4f4;
+		}
+		.content1{
+			position: relative;
+			width: 347px;
+			height: 419px;
+		}
+		.content_title1{
+			position: relative;
+			width: 180px;
+			height: 30px;
+			top: 30px;
+			left: 80px;
+		}
+		.content1 p{
+			margin: 0 0;
+			font-size: 20px;
+			font-style: italic;
+			color: #3c4046;
+		}
+		.radioes{
+			width: 200px;
+			margin: 50px auto;
+			overflow: hidden;
+		}
+		.radioes input{
+			float: left;
+		}
+		.radioes label{
+			float: left;
+			width:78px;
+		}
+		.content2{
+			height: 310px;
+		}
+		.content_right{
+			width: 653px;
+			height: 729px;
+			float: left;
+		}
+		#foot{
+			height: 125px;
+			background-image: url(images/top.jpg);
+		}
+		.foot_content{
+			width: 400px;
+			height: 108px;
+			margin-left: 290px;
+		}
+		#foot p{
+			position: relative;
+			text-align: center;
+			top: 40px;
+		}
+		#foot a{
+			color: #3e96b4;
+		}
+	</style>
+</head>
+<body>
+	<div id="top">
+		<div class="logo"></div>
+			<div class="top_right1">
+				<div class="computer">
+					<a class="computer_logo" href="#"></a>
+				</div>
+				<div class="email">
+					<a class="email_logo" href="#"></a>
+				</div>
+				<div class="home">
+					<a class="home_logo" href="#"></a>
+				</div>
+			</div>
+			<div class="top_right2">
+				<a class="home1" href="#" >HOME</a>
+				<a class="aircraft" href="#">OUR AIRCRAFT</a>
+				<a class="safety" href="#">SAFETY</a>
+				<a class="charters" href="#">CHARTERS</a>
+				<a class="contacts" href="#">CONTACTS</a>
+			</div>
+			<div style="clear:both"></div>
+	</div>
+	<div id="head">
+		<div class="head_content">
+			<p class="head_content_p">Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmod temporincididunt ut labore et dolore magna aliqua.</p>
+		</div>
+		<div class="head_button">
+			<a class="head_button_logo" href="#"></a>
+		</div>
+	</div>
+	<div id="content">
+		 <div class="content_left">
+			<!-- <input type="text" value="enter enter enter enter enter" onblur="if(this.value==''){this.value='enter enter enter enter enter';this.className='font1'}" onfocus="if(this.value==this.defaultValue){this.value='';this.className='font2'}"> -->
+		
+			<div class="content1">
+				<div class="content_title1">
+					<p>Your Flight Planner</p>
+				</div>
+				<div class="radioes">
+					<input type="radio" name="radio" id="choice-1">
+						<label for="choice-1">Round Trip</label>
+					<input type="radio" name="radio" id="choice-2">
+						<label for="choice-2">Empty_Leg</label>
+					<input type="radio" name="radio" id="choice-3">
+						<label for="choice-3">One Way</label>
+					<input type="radio" name="radio" id="choice-4">
+						<label for="choice-4">Multi_Leg</label>
+				</div>
+			</div> 	
+			<div class="content2"></div>
+		</div>
+		<div class="content_right"></div>
+		<div style="clear:both"></div>
+	</div>
+	<div id="foot">
+		<div class="foot_content">
+			<p><a href="#">Website template</a><a style="color:white"> designed by TemplateMonster.com</a></p>
+			<p><a href="#">3D Models</a><a style="color:white"> provided by Templates.com</a></p>
+		</div>
+	</div>
+</body>
+</html>
