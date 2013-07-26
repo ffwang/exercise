@@ -155,13 +155,113 @@
 			float: left;
 			width:78px;
 		}
+		.content_input{
+			position: relative;
+			width: 230px;
+			height: 150px;
+			left: 80px;
+		}
+		.content_input input{
+			color: #999;
+		}
+		.content_input label{
+			display: block;
+		}
+		.Leaving,.Going{
+			width: 210px;
+		}
+		.Departure_left,.Departure_right,.Return_left,.Return_right,.Passenger{
+			width: 100px;
+		}
+		.GO{
+			position: relative;
+			top: 1px;
+			left: 27px;
+			width: 78px;
+			height: 30px;
+			background: url(images/compose.png) no-repeat;
+			background-position: 0 -321px; width: 78px; height: 30px;
+		}
 		.content2{
 			height: 310px;
+		}
+		.content_title2{
+			position: relative;
+			width: 130px;
+			height: 30px;
+			top: 20px;
+			left: 80px;
+		}
+		.content_title2 p{
+			margin: 0 0;
+			font-size: 20px;
+			font-style: italic;
+			color: #3c4046;
+		}
+		.News1,.News2{
+			position: relative;
+			left: 80px;
+			top: 30px;
+			width: 230px;
+			height: 50px;
+			border-bottom: 1px solid #e1e1e1;
+		}
+		.News3{
+			position: relative;
+			left: 80px;
+			top: 30px;
+			width: 230px;
+			height: 50px;
 		}
 		.content_right{
 			width: 653px;
 			height: 729px;
 			float: left;
+		}
+		.content3{
+			width: 653px;
+			height: 419px;
+		}
+		.content_title3{
+			position: relative;
+			width: 250px;
+			height: 30px;
+			top: 30px;
+			left: 50px;
+		}
+		.content_title3 p{
+			margin:0 0;
+			font-size: 20px;
+			font-style: italic;
+			color: #3c4046;
+		}
+		.summary{
+			width: 653px;
+			height: 50px;
+		}
+		.summary p{
+			color: #1e749a;
+			margin-top: 40px;
+			margin-left: 50px;
+		}
+		.content3_Aircraft{
+			position: relative;
+			margin-left: 70px;
+			width: 653px;
+			height: 50px;
+		}
+		.dian{
+			position: absolute;
+			left: -15px;
+			top: 5px;
+			width: 8px;
+			height: 8px;
+			background-color: #4b90ae;
+			border-radius: 5px;
+		}
+		.content4{
+			width: 653px;
+			height: 310px;
 		}
 		#foot{
 			height: 125px;
@@ -215,8 +315,6 @@
 	</div>
 	<div id="content">
 		 <div class="content_left">
-			<!-- <input type="text" value="enter enter enter enter enter" onblur="if(this.value==''){this.value='enter enter enter enter enter';this.className='font1'}" onfocus="if(this.value==this.defaultValue){this.value='';this.className='font2'}"> -->
-		
 			<div class="content1">
 				<div class="content_title1">
 					<p>Your Flight Planner</p>
@@ -231,10 +329,52 @@
 					<input type="radio" name="radio" id="choice-4">
 						<label for="choice-4">Multi_Leg</label>
 				</div>
+				<div class="content_input">
+					<label>Leaving From:</label>
+						<input type="text" class="Leaving" value="Enter City or Airport Code" onblur="if(this.value==''){this.value='Enter City or Airport Code';}" onfocus="if(this.value==this.defaultValue){this.value='';}">
+					<label>Going To:</label>
+						<input type="text" class="Going" value="Enter City or Airport Code" onblur="if(this.value==''){this.value='Enter City or Airport Code';}" onfocus="if(this.value==this.defaultValue){this.value='';}">
+					<label>Departure Date and Time:</label>
+						<input type="text" class="Departure_left" value="mm/dd/yyyy" onblur="if(this.value==''){this.value='mm/dd/yyyy';}" onfocus="if(this.value==this.defaultValue){this.value='';}">
+						<input type="text" class="Departure_right" value="12:00 am" onblur="if(this.value==''){this.value='12:00 am';}" onfocus="if(this.value==this.defaultValue){this.value='';}">
+					<label>Return Date and Time:</label>
+						<input type="text" class="Return_left" value="mm/dd/yyyy" onblur="if(this.value==''){this.value='mm/dd/yyyy';}" onfocus="if(this.value==this.defaultValue){this.value='';}">
+						<input type="text" class="Return_right" value="12:00 am" onblur="if(this.value==''){this.value='12:00 am';}" onfocus="if(this.value==this.defaultValue){this.value='';}">
+					<label>Passenger(s):</label>
+						<input type="text" class="Passenger" value="#Passenger" onblur="if(this.value==''){this.value='#Passenger';}" onfocus="if(this.value==this.defaultValue){this.value='';}">
+					<button class="GO"></button>	
+				</div>
 			</div> 	
-			<div class="content2"></div>
+			<div class="content2">
+				<div class="content_title2">
+					<p>Recent News</p>
+				</div>
+				<div class="News1">
+					<p>Nemo enim ipsam voluptatem qula November 5,2010</p>
+				</div>
+				<div class="News2">
+					<p>Nemo enim ipsam voluptatem qula November 5,2010</p>
+				</div>
+				<div class="News3">
+					<p>Nemo enim ipsam voluptatem qula November 5,2010</p>
+				</div>
+			</div>
 		</div>
-		<div class="content_right"></div>
+		<div class="content_right">
+			<div class="content3">
+				<div class="content_title3">
+					<p>Welcome to our Website!</p>
+				</div>
+				<div class="summary">
+					<p>Air Lines is a free web template created by TemplateMonster.com team.This website template is optimized for 1024x768 screen resolution</p>
+				</div>
+				<div class="content3_Aircraft">
+				<div class="dian"></div>
+						<div class=""><p>Aircraft</p></div>
+				</div>
+			</div>
+			<div class="content4"></div>
+		</div>
 		<div style="clear:both"></div>
 	</div>
 	<div id="foot">
